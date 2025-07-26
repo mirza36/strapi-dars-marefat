@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "irfan-stage-2",
+  "info": {
+    "singularName": "irfan-stage-2",
+    "pluralName": "irfan-stage-2s",
+    "displayName": "irfan nazari stage 2"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "thumbnail_pic": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "audios": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "date_uploaded": {
+      "type": "date"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

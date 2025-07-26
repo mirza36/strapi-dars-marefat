@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "irfan_amali_stage_4s",
+  "info": {
+    "singularName": "irfan-amali-stage-4",
+    "pluralName": "irfan-amali-stage-4s",
+    "displayName": "irfan amali stage 4"
+  },
+  
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "thumbnail_pic": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "audios": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "date_uploaded": {
+      "type": "date"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
+
