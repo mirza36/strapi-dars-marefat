@@ -6,7 +6,6 @@
     "pluralName": "irfan-amali-stage-6s",
     "displayName": "irfan amali stage 6"
   },
-  
   "options": {
     "draftAndPublish": true
   },
@@ -26,17 +25,26 @@
         "audios"
       ]
     },
-    "description": {
-      "type": "text"
-    },
     "date_uploaded": {
       "type": "date"
     },
     "title": {
       "type": "string"
+    },
+    "description1": {
+      "type": "richtext"
+    },
+    "description2": {
+      "type": "richtext"
+    },
+    "description3": {
+      "type": "richtext"
+    },
+    "description4": {
+      "type": "richtext"
+    },
+    "description5": {
+      "type": "richtext"
     }
   }
 }
-
-
-  

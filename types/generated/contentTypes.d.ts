@@ -373,39 +373,6 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiAudioDisplayAudioDisplay
-  extends Struct.CollectionTypeSchema {
-  collectionName: 'audio_displays';
-  info: {
-    displayName: 'audio display';
-    pluralName: 'audio-displays';
-    singularName: 'audio-display';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    audios: Schema.Attribute.Media<'audios'>;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    date_uploaded: Schema.Attribute.Date;
-    description: Schema.Attribute.Text;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::audio-display.audio-display'
-    > &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    thumbnail_pic: Schema.Attribute.Media<'images'>;
-    title: Schema.Attribute.String;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
 export interface ApiBookBook extends Struct.CollectionTypeSchema {
   collectionName: 'books';
   info: {
@@ -449,11 +416,20 @@ export interface ApiIrfanAmaliStage1IrfanAmaliStage1
   };
   attributes: {
     audios: Schema.Attribute.Media<'audios'>;
+    box_values: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date_uploaded: Schema.Attribute.Date;
-    description: Schema.Attribute.Text;
+    description1: Schema.Attribute.RichText;
+    description2: Schema.Attribute.RichText;
+    description3: Schema.Attribute.RichText;
+    description4: Schema.Attribute.RichText;
+    description5: Schema.Attribute.RichText;
+    description6: Schema.Attribute.RichText;
+    description7: Schema.Attribute.RichText;
+    description8: Schema.Attribute.RichText;
+    description9: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -486,7 +462,16 @@ export interface ApiIrfanAmaliStage2IrfanAmaliStage2
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date_uploaded: Schema.Attribute.Date;
-    description: Schema.Attribute.Text;
+    description1: Schema.Attribute.RichText;
+    description10: Schema.Attribute.RichText;
+    description2: Schema.Attribute.RichText;
+    description3: Schema.Attribute.RichText;
+    description4: Schema.Attribute.RichText;
+    description5: Schema.Attribute.RichText;
+    description6: Schema.Attribute.RichText;
+    description7: Schema.Attribute.RichText;
+    description8: Schema.Attribute.RichText;
+    description9: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -519,7 +504,16 @@ export interface ApiIrfanAmaliStage3IrfanAmaliStage3
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date_uploaded: Schema.Attribute.Date;
-    description: Schema.Attribute.Text;
+    description1: Schema.Attribute.RichText;
+    description10: Schema.Attribute.RichText;
+    description2: Schema.Attribute.RichText;
+    description3: Schema.Attribute.RichText;
+    description4: Schema.Attribute.RichText;
+    description5: Schema.Attribute.RichText;
+    description6: Schema.Attribute.RichText;
+    description7: Schema.Attribute.RichText;
+    description8: Schema.Attribute.RichText;
+    description9: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -552,7 +546,11 @@ export interface ApiIrfanAmaliStage4IrfanAmaliStage4
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date_uploaded: Schema.Attribute.Date;
-    description: Schema.Attribute.Text;
+    description1: Schema.Attribute.RichText;
+    description2: Schema.Attribute.RichText;
+    description3: Schema.Attribute.RichText;
+    description4: Schema.Attribute.RichText;
+    description5: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -585,7 +583,11 @@ export interface ApiIrfanAmaliStage5IrfanAmaliStage5
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date_uploaded: Schema.Attribute.Date;
-    description: Schema.Attribute.Text;
+    description1: Schema.Attribute.RichText;
+    description2: Schema.Attribute.RichText;
+    description3: Schema.Attribute.RichText;
+    description4: Schema.Attribute.RichText;
+    description5: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -618,7 +620,11 @@ export interface ApiIrfanAmaliStage6IrfanAmaliStage6
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date_uploaded: Schema.Attribute.Date;
-    description: Schema.Attribute.Text;
+    description1: Schema.Attribute.RichText;
+    description2: Schema.Attribute.RichText;
+    description3: Schema.Attribute.RichText;
+    description4: Schema.Attribute.RichText;
+    description5: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -650,7 +656,11 @@ export interface ApiIrfanStage1IrfanStage1 extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date_uploaded: Schema.Attribute.Date;
-    description: Schema.Attribute.Text;
+    description1: Schema.Attribute.RichText;
+    description2: Schema.Attribute.RichText;
+    description3: Schema.Attribute.RichText;
+    description4: Schema.Attribute.RichText;
+    description5: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -682,7 +692,11 @@ export interface ApiIrfanStage2IrfanStage2 extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date_uploaded: Schema.Attribute.Date;
-    description: Schema.Attribute.Text;
+    description1: Schema.Attribute.RichText;
+    description2: Schema.Attribute.RichText;
+    description3: Schema.Attribute.RichText;
+    description4: Schema.Attribute.RichText;
+    description5: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -714,7 +728,11 @@ export interface ApiIrfanStage3IrfanStage3 extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date_uploaded: Schema.Attribute.Date;
-    description: Schema.Attribute.Text;
+    description1: Schema.Attribute.RichText;
+    description2: Schema.Attribute.RichText;
+    description3: Schema.Attribute.RichText;
+    description4: Schema.Attribute.RichText;
+    description5: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -746,7 +764,11 @@ export interface ApiIrfanStage4IrfanStage4 extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date_uploaded: Schema.Attribute.Date;
-    description: Schema.Attribute.Text;
+    description1: Schema.Attribute.RichText;
+    description2: Schema.Attribute.RichText;
+    description3: Schema.Attribute.RichText;
+    description4: Schema.Attribute.RichText;
+    description5: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -778,7 +800,11 @@ export interface ApiIrfanStage5IrfanStage5 extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date_uploaded: Schema.Attribute.Date;
-    description: Schema.Attribute.Text;
+    description1: Schema.Attribute.RichText;
+    description2: Schema.Attribute.RichText;
+    description3: Schema.Attribute.RichText;
+    description4: Schema.Attribute.RichText;
+    description5: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -810,7 +836,11 @@ export interface ApiIrfanStage6IrfanStage6 extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date_uploaded: Schema.Attribute.Date;
-    description: Schema.Attribute.Text;
+    description1: Schema.Attribute.RichText;
+    description2: Schema.Attribute.RichText;
+    description3: Schema.Attribute.RichText;
+    description4: Schema.Attribute.RichText;
+    description5: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -962,6 +992,49 @@ export interface PluginI18NLocale extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface PluginLogzLogz extends Struct.CollectionTypeSchema {
+  collectionName: 'logz';
+  info: {
+    description: 'The logz collection';
+    displayName: 'Logz';
+    pluralName: 'logz';
+    singularName: 'logz';
+  };
+  options: {
+    draftAndPublish: false;
+    timestamps: true;
+  };
+  pluginOptions: {
+    'content-manager': {
+      visible: true;
+    };
+    'content-type-builder': {
+      visible: false;
+    };
+  };
+  attributes: {
+    action: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    data: Schema.Attribute.JSON;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'plugin::logz.logz'> &
+      Schema.Attribute.Private;
+    method: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    statusCode: Schema.Attribute.Integer;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    url: Schema.Attribute.Text;
+    user: Schema.Attribute.Relation<
+      'oneToOne',
+      'plugin::users-permissions.user'
+    >;
   };
 }
 
@@ -1335,7 +1408,6 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
-      'api::audio-display.audio-display': ApiAudioDisplayAudioDisplay;
       'api::book.book': ApiBookBook;
       'api::irfan-amali-stage-1.irfan-amali-stage-1': ApiIrfanAmaliStage1IrfanAmaliStage1;
       'api::irfan-amali-stage-2.irfan-amali-stage-2': ApiIrfanAmaliStage2IrfanAmaliStage2;
@@ -1352,6 +1424,7 @@ declare module '@strapi/strapi' {
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
+      'plugin::logz.logz': PluginLogzLogz;
       'plugin::review-workflows.workflow': PluginReviewWorkflowsWorkflow;
       'plugin::review-workflows.workflow-stage': PluginReviewWorkflowsWorkflowStage;
       'plugin::upload.file': PluginUploadFile;
