@@ -45,6 +45,9 @@
     },
     "description5": {
       "type": "richtext"
+    },
+    "box_values": {
+      "type": "text"
     }
   }
 }

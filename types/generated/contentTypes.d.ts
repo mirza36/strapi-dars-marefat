@@ -458,6 +458,7 @@ export interface ApiIrfanAmaliStage2IrfanAmaliStage2
   };
   attributes: {
     audios: Schema.Attribute.Media<'audios'>;
+    box_values: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -500,6 +501,7 @@ export interface ApiIrfanAmaliStage3IrfanAmaliStage3
   };
   attributes: {
     audios: Schema.Attribute.Media<'audios'>;
+    box_values: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -542,6 +544,7 @@ export interface ApiIrfanAmaliStage4IrfanAmaliStage4
   };
   attributes: {
     audios: Schema.Attribute.Media<'audios'>;
+    box_values: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -579,6 +582,7 @@ export interface ApiIrfanAmaliStage5IrfanAmaliStage5
   };
   attributes: {
     audios: Schema.Attribute.Media<'audios'>;
+    box_values: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -616,6 +620,7 @@ export interface ApiIrfanAmaliStage6IrfanAmaliStage6
   };
   attributes: {
     audios: Schema.Attribute.Media<'audios'>;
+    box_values: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -652,6 +657,7 @@ export interface ApiIrfanStage1IrfanStage1 extends Struct.CollectionTypeSchema {
   };
   attributes: {
     audios: Schema.Attribute.Media<'audios'>;
+    box_values: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -688,6 +694,7 @@ export interface ApiIrfanStage2IrfanStage2 extends Struct.CollectionTypeSchema {
   };
   attributes: {
     audios: Schema.Attribute.Media<'audios'>;
+    box_values: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -724,6 +731,7 @@ export interface ApiIrfanStage3IrfanStage3 extends Struct.CollectionTypeSchema {
   };
   attributes: {
     audios: Schema.Attribute.Media<'audios'>;
+    box_values: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -760,6 +768,7 @@ export interface ApiIrfanStage4IrfanStage4 extends Struct.CollectionTypeSchema {
   };
   attributes: {
     audios: Schema.Attribute.Media<'audios'>;
+    box_values: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -796,6 +805,7 @@ export interface ApiIrfanStage5IrfanStage5 extends Struct.CollectionTypeSchema {
   };
   attributes: {
     audios: Schema.Attribute.Media<'audios'>;
+    box_values: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -832,6 +842,7 @@ export interface ApiIrfanStage6IrfanStage6 extends Struct.CollectionTypeSchema {
   };
   attributes: {
     audios: Schema.Attribute.Media<'audios'>;
+    box_values: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
