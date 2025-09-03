@@ -51,15 +51,18 @@
       "type": "text"
     },
     "description7": {
-      "type": "string"
+      "type": "text"
     },
     "description8": {
-      "type": "string"
+      "type": "text"
     },
     "description9": {
       "type": "text"
     },
     "description10": {
+      "type": "text"
+    },
+    "box_values": {
       "type": "text"
     }
   }

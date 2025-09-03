@@ -879,6 +879,7 @@ export interface ApiUmumiUmumi extends Struct.CollectionTypeSchema {
   };
   attributes: {
     audios: Schema.Attribute.Media<'files' | 'audios', true>;
+    box_values: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -889,8 +890,8 @@ export interface ApiUmumiUmumi extends Struct.CollectionTypeSchema {
     description4: Schema.Attribute.Text;
     description5: Schema.Attribute.Text;
     description6: Schema.Attribute.Text;
-    description7: Schema.Attribute.String;
-    description8: Schema.Attribute.String;
+    description7: Schema.Attribute.Text;
+    description8: Schema.Attribute.Text;
     description9: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::umumi.umumi'> &
