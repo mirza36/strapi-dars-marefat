@@ -867,6 +867,45 @@ export interface ApiIrfanStage6IrfanStage6 extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiUmumiUmumi extends Struct.CollectionTypeSchema {
+  collectionName: 'umumis';
+  info: {
+    displayName: 'umumi';
+    pluralName: 'umumis';
+    singularName: 'umumi';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    audios: Schema.Attribute.Media<'files' | 'audios', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description1: Schema.Attribute.Text;
+    description10: Schema.Attribute.Text;
+    description2: Schema.Attribute.Text;
+    description3: Schema.Attribute.Text;
+    description4: Schema.Attribute.Text;
+    description5: Schema.Attribute.Text;
+    description6: Schema.Attribute.Text;
+    description7: Schema.Attribute.String;
+    description8: Schema.Attribute.String;
+    description9: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::umumi.umumi'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    thumbnail_pic: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1432,6 +1471,7 @@ declare module '@strapi/strapi' {
       'api::irfan-stage-4.irfan-stage-4': ApiIrfanStage4IrfanStage4;
       'api::irfan-stage-5.irfan-stage-5': ApiIrfanStage5IrfanStage5;
       'api::irfan-stage-6.irfan-stage-6': ApiIrfanStage6IrfanStage6;
+      'api::umumi.umumi': ApiUmumiUmumi;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
