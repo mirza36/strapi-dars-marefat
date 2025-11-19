@@ -373,6 +373,74 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAudioAudio extends Struct.CollectionTypeSchema {
+  collectionName: 'audios';
+  info: {
+    displayName: 'Audio';
+    pluralName: 'audios';
+    singularName: 'audio';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    audio_file_1: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_10: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_2: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_3: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_4: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_5: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_6: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_7: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_8: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_9: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description_1: Schema.Attribute.Text;
+    description_10: Schema.Attribute.Text;
+    description_2: Schema.Attribute.Text;
+    description_3: Schema.Attribute.Text;
+    description_4: Schema.Attribute.Text;
+    description_5: Schema.Attribute.Text;
+    description_6: Schema.Attribute.String;
+    description_7: Schema.Attribute.Text;
+    description_8: Schema.Attribute.Text;
+    description_9: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::audio.audio'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    thumbnail_pic: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    Topic_Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiBookBook extends Struct.CollectionTypeSchema {
   collectionName: 'books';
   info: {
@@ -1194,6 +1262,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::audio.audio': ApiAudioAudio;
       'api::book.book': ApiBookBook;
       'api::irfan-amali-stage-1.irfan-amali-stage-1': ApiIrfanAmaliStage1IrfanAmaliStage1;
       'api::irfan-amali-stage-2.irfan-amali-stage-2': ApiIrfanAmaliStage2IrfanAmaliStage2;
