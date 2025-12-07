@@ -90,7 +90,7 @@
       ]
     },
     "description_6": {
-      "type": "string"
+      "type": "text"
     },
     "audio_file_6": {
       "type": "media",

@@ -423,7 +423,7 @@ export interface ApiAudioAudio extends Struct.CollectionTypeSchema {
     description_3: Schema.Attribute.Text;
     description_4: Schema.Attribute.Text;
     description_5: Schema.Attribute.Text;
-    description_6: Schema.Attribute.String;
+    description_6: Schema.Attribute.Text;
     description_7: Schema.Attribute.Text;
     description_8: Schema.Attribute.Text;
     description_9: Schema.Attribute.Text;
