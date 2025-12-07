@@ -390,13 +390,103 @@ export interface ApiAudioAudio extends Struct.CollectionTypeSchema {
     audio_file_10: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
+    audio_file_11: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_12: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_13: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_14: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_15: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_16: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_17: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_18: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_19: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     audio_file_2: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_20: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_21: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_22: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_23: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_24: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_25: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_26: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_27: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_28: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_29: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
     audio_file_3: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
+    audio_file_30: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_31: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_32: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_33: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_34: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_35: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_36: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_37: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_38: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_39: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     audio_file_4: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    audio_file_40: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
     audio_file_5: Schema.Attribute.Media<
@@ -419,9 +509,39 @@ export interface ApiAudioAudio extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     description_1: Schema.Attribute.Text;
     description_10: Schema.Attribute.Text;
+    description_11: Schema.Attribute.Text;
+    description_12: Schema.Attribute.Text;
+    description_13: Schema.Attribute.Text;
+    description_14: Schema.Attribute.Text;
+    description_15: Schema.Attribute.Text;
+    description_16: Schema.Attribute.Text;
+    description_17: Schema.Attribute.Text;
+    description_18: Schema.Attribute.Text;
+    description_19: Schema.Attribute.Text;
     description_2: Schema.Attribute.Text;
+    description_20: Schema.Attribute.Text;
+    description_21: Schema.Attribute.Text;
+    description_22: Schema.Attribute.Text;
+    description_23: Schema.Attribute.Text;
+    description_24: Schema.Attribute.Text;
+    description_25: Schema.Attribute.Text;
+    description_26: Schema.Attribute.Text;
+    description_27: Schema.Attribute.Text;
+    description_28: Schema.Attribute.Text;
+    description_29: Schema.Attribute.Text;
     description_3: Schema.Attribute.Text;
+    description_30: Schema.Attribute.Text;
+    description_31: Schema.Attribute.Text;
+    description_32: Schema.Attribute.Text;
+    description_33: Schema.Attribute.Text;
+    description_34: Schema.Attribute.Text;
+    description_35: Schema.Attribute.Text;
+    description_36: Schema.Attribute.Text;
+    description_37: Schema.Attribute.Text;
+    description_38: Schema.Attribute.Text;
+    description_39: Schema.Attribute.Text;
     description_4: Schema.Attribute.Text;
+    description_40: Schema.Attribute.Text;
     description_5: Schema.Attribute.Text;
     description_6: Schema.Attribute.Text;
     description_7: Schema.Attribute.Text;
